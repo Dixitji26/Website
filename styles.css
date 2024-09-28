@@ -1,0 +1,195 @@
+*{
+
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    }
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover{  
+    color: yellow
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap; /* Allows the boxes to wrap if screen size is small */
+    gap: 10px; /* Spacing between the boxes */
+    justify-content: space-between; /* Evenly distribute the boxes */
+    text-align: center;
+    
+}
+.project-box {
+    background-color: rgba(200, 103, 38, 0.615);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 40%; /* Each box will take up 30% of the container width */
+    height: 600px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    
+}
+.project-box:hover {
+    transform: translateY(-5px);
+}
+@media (max-width: 768px) {
+    .project-box {
+        width: 100%;
+    }
+}
+.description {
+    margin-bottom: 15px;
+}
+
+.more-text {
+    display: none;
+}
+
+.more-link {
+    color: #0f0f0fce;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.more-link:hover {
+    color: #da260a;
+}
+.pic{
+    height: auto;
+    width: auto; 
+}
+.type{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(196, 84, 36); /* The typewriter cursor */
+     /* Keeps the content on a single line */
+    margin: 0 auto; /* Centers the text */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: typing 4.5s steps(50, end), blink-caret 0.75s step-end infinite, hide-caret 0.5s 4.5s forwards;
+    
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    30% { border-color: rgb(14, 13, 12); }
+    
+}
+@keyframes hide-caret {
+    from { border-color: rgb(14, 13, 12); }
+    to { border-color: transparent; }
+  }
+.hom{
+    font-size: 25px;
+    opacity: 0; /* Start with the text invisible */
+    animation: fadeIn 5s ease-in-out forwards; 
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Fully transparent */
+    }
+    100% {
+        opacity: 1; /* Fully opaque */
+    }
+}
+.education{
+    text-align: left;
+}
+.experience{
+    text-align: left;
+}
+.abt {
+    color:gray;
+    font-size: medium;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+.project{
+    text-align: justify;
+    font-style: justify;
+}
+
+section#home {
+    background-color: #333;
+    color: #fff;
+}
+
+section#projects .project {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+} 

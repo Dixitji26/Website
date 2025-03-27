@@ -38,7 +38,12 @@ nav ul li a:hover{
     color: yellow
 }
 .container {
-    width: 50%;
+    width: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+.experience {
+    width: auto;
     margin: 0 auto;
     padding: 10px;
 }
@@ -46,15 +51,15 @@ nav ul li a:hover{
     background-image: url('abc.jpg'); /* Replace 'your-image-url.jpg' with your actual image URL */
     background-size: cover; /* Optional: Scales the background image to cover the entire element */
     background-position: center; /* Optional: Centers the background image */
-    padding: 20px; /* Optional: Adds some padding to improve readability */
+    padding: 30px; /* Optional: Adds some padding to improve readability */
     border-radius: 10px; /* Optional: Adds a rounded corner effect */
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow effect */
 }
 .projects {
     display: flex;
     flex-wrap: wrap; /* Allows the boxes to wrap if screen size is small */
-    gap: 10px; /* Spacing between the boxes */
-    justify-content: space-between; /* Evenly distribute the boxes */
+    gap: 5px; /* Spacing between the boxes */
+    justify-content:space-evenly; /* Evenly distribute the boxes */
     text-align: center;
     
 }
@@ -132,9 +137,6 @@ nav ul li a:hover{
 .education{
     text-align: left;
 }
-.experience{
-    text-align: left;
-}
 .abt {
     color:gray;
     font-size: medium;
@@ -192,6 +194,7 @@ footer {
     padding: 10px 0;
 } 
 h3{
-    color: white
+    color: white;
+   
 
 }

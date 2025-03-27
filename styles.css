@@ -38,7 +38,7 @@ nav ul li a:hover{
     color: yellow
 }
 .container {
-    width: 35%;
+    width: 50%;
     margin: 0 auto;
     padding: 10px;
 }
@@ -193,5 +193,5 @@ footer {
 } 
 h3{
     color: white
-    
+
 }
